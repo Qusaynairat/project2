@@ -1,5 +1,214 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.container {
+  width: calc(100% - 324px);
+  margin: auto;
+}
+
+:root {
+  font-family: "Be Vietnam Pro", sans-serif;
+  --paragraph-text-main-color: #4c4c4d;
+  --title-text-color: #262626;
+  --main-color: #ff9500;
+  --main-background-color: #f7f7f8;
+  --secondary-background-color: #fff;
+  --headline-text-color: #1a1a1a;
+  --border-style: 1px solid #f1f1f3;
+  background-color: var(--main-background-color);
+}
+::selection {
+  color: var(--main-color);
+  background-color: var(--title-text-color);
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+/* ----------------------- nav ---------------------------- */
+nav {
+  border-bottom: var(--border-style);
+  position: sticky;
+  top: 0px;
+}
+nav .row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px 0px;
+}
+nav .row .gorup1 {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+nav .row img {
+  width: 54px;
+  height: 54px;
+}
+nav .row ul {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 26px;
+  padding: 20px 0px;
+}
+nav .row ul li a {
+  font-size: 18px;
+  color: var(--title-text-color);
+  padding: 14px 0px;
+  transition: all 0.7s;
+}
+nav .row ul li a.active {
+  border-radius: 8px;
+  background: var(--white-95, #f1f1f3);
+  padding: 14px 24px;
+}
+nav .row ul li a:hover {
+  border-radius: 8px;
+  background: var(--white-95, #f1f1f3);
+  padding: 14px 24px;
+}
+nav .row .gorup2 {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  font-size: 18px;
+}
+nav .row .gorup2 a:nth-child(1) {
+  color: var(--title-text-color);
+  padding: 14px 0px;
+  transition: all 0.7s;
+}
+nav .row .gorup2 a:nth-child(2) {
+  background: var(--main-color);
+  color: white;
+  padding: 14px 34px;
+  border-radius: 8px;
+  transition: all 0.7s;
+}
+nav .row .gorup2 a:hover {
+  color: var(--main-color);
+  border-radius: 8px;
+  background: none;
+  padding: 14px 34px;
+  border: 1px solid var(--main-color);
+}
+/* ----------------------- header ---------------------------- */
+header .row {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 155px 0px;
+}
+header .row .subcontainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+header .row .txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+header .row .txt .group1 {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+  background-color: #fcfcfd;
+  border: var(--border-style);
+  border-radius: 11px;
+  padding: 14px 22px;
+}
+header .row .txt .group1 h1 {
+  font-size: 48px;
+  font-weight: 600;
+  color: var(--headline-text-color);
+}
+header .row .txt .group1 h1 span {
+  color: var(--main-color);
+}
+header .row .txt h2 {
+  font-size: 38px;
+  font-weight: 500;
+  color: var(--title-text-color);
+}
+header .row .txt p {
+  font-size: 18px;
+  color: var(--title-text-color);
+}
+header .row .group2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+header .row .group2 a:nth-child(1) {
+  color: white;
+  font-size: 18px;
+  background-color: var(--main-color);
+  padding: 18px 24px;
+  border-radius: 8px;
+  transition: all 0.7s;
+}
+header .row .group2 a:nth-child(2) {
+  color: var(--title-text-color);
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #fff;
+  padding: 18px 24px;
+  border-radius: 8px;
+  border: var(--border-style);
+  transition: all 0.7s;
+}
+header .row .group2 a:hover {
+  color: var(--main-color);
+  border-radius: 8px;
+  background: none;
+  padding: 18px 24px;
+  border: 1px solid var(--main-color);
+}
+header .row .group3 {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  border: var(--border-style);
+  padding: 30px;
+  border-radius: 12px;
+  margin: 100px 0px;
+}
+header .row .group3 img {
+  padding: 30px 40px;
+  border-right: var(--border-style);
+}
+header .row .group3 img:last-child {
+  border: none;
 }
