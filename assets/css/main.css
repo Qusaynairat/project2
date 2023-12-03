@@ -197,6 +197,7 @@ header .row .group2 a:hover {
 header .row .group3 {
   width: 100%;
   display: flex;
+  background-color: #FCFCFD;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
