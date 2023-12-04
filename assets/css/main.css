@@ -400,30 +400,103 @@ header .row .video img {
   font-weight: 500;
   color: var(--title-text-color);
 }
-.our-courses .column .card h3{
+.our-courses .column .card h3 {
   color: var(--title-text-color);
   font-size: 24px;
   font-weight: 600;
 }
-.our-courses .column .card p{
-color: var(--paragraph-text-main-color);
-font-size: 18px;
-height: 150px;
+.our-courses .column .card p {
+  color: var(--paragraph-text-main-color);
+  font-size: 18px;
+  height: 150px;
 }
-.our-courses .column .card a{
-width: 100%;
-text-align: center;
-color: var(--title-text-color);
-font-size: 18px;
-font-weight: 500;
-background-color: var(--main-background-color);
-border: var(--border-style);
-border-radius: 8px;
-padding: 18px 24px ;
-transition: all 0.7s;
+.our-courses .column .card a {
+  width: 100%;
+  text-align: center;
+  color: var(--title-text-color);
+  font-size: 18px;
+  font-weight: 500;
+  background-color: var(--main-background-color);
+  border: var(--border-style);
+  border-radius: 8px;
+  padding: 18px 24px;
+  transition: all 0.7s;
 }
-.our-courses .column .card a:hover{
-color: var(--main-color);
-border-color:var(--main-color);
-background: none;
+.our-courses .column .card a:hover {
+  color: var(--main-color);
+  border-color: var(--main-color);
+  background: none;
+}
+/* ----------------------- our-testimonials ---------------------------- */
+.our-testimonials .column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  margin-bottom: 100px;
+}
+.our-testimonials .column .stories {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: center;
+  gap: 30px;
+}
+.our-testimonials .column .stories .story {
+  width: calc((100% - 30px) / 2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background: #fff;
+  border-radius: 12px;
+  border: var(--border-style);
+}
+.our-testimonials .column .stories .story p {
+  padding: 50px;
+  border-bottom: var(--border-style);
+  color: var(--paragraph-text-main-color);
+  font-size: 18px;
+}
+.our-testimonials .column .stories .story .user {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 50px;
+}
+.our-testimonials .column .stories .story .user .name {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 20px;
+}
+.our-testimonials .column .stories .story .user .name p {
+  color: #333;
+  padding: 0px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+}
+.our-testimonials .column .stories .story .user .name img {
+  border-radius: 8px;
+}
+.our-testimonials .column .stories .story .user a {
+  color: var(--title-text-color);
+  font-size: 18px;
+  font-weight: 500;
+  border: var(--border-style);
+  background: var(--main-background-color);
+  border-radius: 8px;
+  padding: 18px 24px;
+  transition: all 0.7s;
+}
+.our-testimonials .column .stories .story .user a:hover {
+  color: var(--main-color);
+  border-color: var(--main-color);
+  background: none;
 }
