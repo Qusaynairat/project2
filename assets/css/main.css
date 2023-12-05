@@ -16,6 +16,7 @@
   --title-text-color: #262626;
   --main-color: #ff9500;
   --main-background-color: #f7f7f8;
+  --secondary-background-color: #fcfcfd;
   --secondary-background-color: #fff;
   --headline-text-color: #1a1a1a;
   --border-style: 1px solid #f1f1f3;
@@ -144,7 +145,7 @@ header .row .txt .group1 {
   flex-wrap: wrap;
   gap: 10px;
   margin-bottom: 10px;
-  background-color: #fcfcfd;
+  background: var(--secondary-background-color);
   border: var(--border-style);
   border-radius: 11px;
   padding: 14px 22px;
@@ -203,11 +204,11 @@ header .row .group2 a:hover {
   padding: 18px 24px;
   border: 1px solid var(--main-color);
 }
-header .row .group3 {
+.companies .row {
   width: 100%;
   display: flex;
-  background-color: #fcfcfd;
-  justify-content: space-between;
+  background: var(--secondary-background-color);
+  justify-content: left;
   align-items: center;
   flex-wrap: wrap;
   border: var(--border-style);
@@ -215,20 +216,53 @@ header .row .group3 {
   border-radius: 12px;
   margin: 100px 0px;
 }
-header .row .group3 img {
-  padding: 30px 66px;
+.companies .row img {
+  padding: 30px 66.2px;
   margin: 0px;
   border-right: var(--border-style);
 }
-header .row .group3 img:last-child {
+.companies .row img:last-child {
   border: none;
 }
-header .row .video img {
+.video {
+  margin-bottom: 150px;
+}
+.video .row {
+  position: relative;
+}
+.video .row img:first-child {
   width: 100%;
-  display: flex;
   border-radius: 16px;
 }
-/* ----------------------- title of sections ---------------------------- */
+.video .row .arrow {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+}
+.video .row .arrow svg {
+  width: 70px;
+  cursor: pointer;
+  height: 70px;
+  padding: 14px;
+  border-radius: 50%;
+  border: 6px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.2);
+  transition: all 0.6s;
+}
+.video .row .arrow path {
+  transition: all 0.6s;
+}
+.video .row .arrow svg:hover {
+  border-color: var(--main-color);
+}
+.video .row .arrow svg:hover path {
+  fill: var(--main-color);
+}
+/* ----------------------- title of sections  ---------------------------- */
 .title {
   width: 100%;
   display: flex;
@@ -256,7 +290,7 @@ header .row .video img {
   text-align: center;
   color: var(--title-text-color);
   padding: 18px 24px;
-  background-color: #fcfcfd;
+  background: var(--secondary-background-color);
   border-radius: 8px;
   border: var(--border-style);
   transition: all 0.7s;
@@ -301,6 +335,9 @@ header .row .video img {
   border-radius: 12px;
   background-color: #fff;
 }
+.benefits .column .cards .card img {
+  border-radius: 8px;
+}
 .benefits .column .cards .card h2 {
   font-size: 54px;
   color: var(--title-text-color);
@@ -329,7 +366,7 @@ header .row .video img {
 }
 .benefits .column .cards .card a {
   padding: 20px;
-  background-color: #fcfcfd;
+  background: var(--secondary-background-color);
   border-radius: 8px;
   border: var(--border-style);
   transition: all 0.7s;
@@ -376,17 +413,20 @@ header .row .video img {
 }
 .our-courses .column .card img {
   border-radius: 8px;
+  width: 100%;
 }
 .our-courses .column .card .row {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 .our-courses .column .card .row .group {
   display: flex;
   justify-content: left;
   align-items: center;
+  flex-wrap: wrap;
   gap: 10px;
 }
 .our-courses .column .card .row .group span {
@@ -498,5 +538,124 @@ header .row .video img {
 .our-testimonials .column .stories .story .user a:hover {
   color: var(--main-color);
   border-color: var(--main-color);
+  background: none;
+}
+/* ----------------------- our-pricing ---------------------------- */
+.our-pricing .column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  margin-bottom: 100px;
+}
+.our-pricing .column .cards {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  padding: 40px 80px;
+  background-color: #fff;
+}
+.our-pricing .column .cards .card {
+  width: calc((100% - 30px) / 2);
+  background: #fcfcfd;
+  border-radius: 12px;
+  border: 1px solid var(--white-95, #f1f1f3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+}
+.our-pricing .column .cards .card h3 {
+  font-size: 22px;
+  width: 100%;
+  font-weight: 500;
+  color: var(--title-text-color);
+  background-color: #fff9f0;
+  border-radius: 6px;
+  border: 1px solid #ffeacc;
+  padding: 14px 0px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.our-pricing .column .cards .card p {
+  margin-bottom: 30px;
+}
+.our-pricing .column .cards .card span:nth-child(1) {
+  color: var(--title-text-color);
+  font-size: 80px;
+  font-weight: 800;
+}
+.our-pricing .column .cards .card span:nth-child(2) {
+  color: var(--paragraph-text-main-color);
+  font-size: 20px;
+  font-weight: 500;
+}
+.our-pricing .column .cards .card .sub {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 30px;
+  border-radius: 14px 14px 0px 0px;
+  background: #fff;
+  border: var(--border-style);
+}
+.our-pricing .column .cards .card .sub h4 {
+  width: 100%;
+  text-align: center;
+  color: var(--title-text-color);
+  font-size: 20px;
+  font-weight: 500;
+}
+.our-pricing .column .cards .card .sub .items {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.our-pricing .column .cards .card .sub .items p {
+  width: 100%;
+  border: var(--border-style);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-self: center;
+  padding: 14px;
+  gap: 10px;
+  margin: 0px;
+}
+.our-pricing .column .cards .card .sub .items p span {
+  font-size: 18px;
+  color: var(--paragraph-text-main-color);
+  display: flex;
+  align-self: center;
+}
+.our-pricing .column .cards .card a {
+  background: var(--main-color);
+  font-size: 20px;
+  color: #fff;
+  padding: 20px 24px;
+  font-weight: 500;
+  text-align: center;
+  width: 100%;
+  border-radius: 0px 0px 8px 8px;
+  background: var(--main-color);
+  transition: all 0.7s;
+  border: var(--border-style);
+}
+.our-pricing .column .cards .card a:hover {
+  border-color: var(--main-color);
+  color: var(--main-color);
   background: none;
 }
