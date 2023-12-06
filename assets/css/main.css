@@ -547,8 +547,41 @@ header .row .group2 a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 80px;
+  gap: 60px;
   margin-bottom: 100px;
+}
+.our-pricing .column .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 14px;
+  border-radius: 8px;
+  background: #fff;
+}
+.our-pricing .column .btn input {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  color: var(--title-text-color);
+  padding: 18px 24px;
+  background: var(--secondary-background-color);
+  border-radius: 8px;
+  border: var(--border-style);
+  transition: all 0.7s;
+}
+.our-pricing .column .btn input:first-child {
+  background: var(--main-color);
+  color: white;
+}
+.our-pricing .column .btn input:last-child {
+  border: hidden;
+}
+.our-pricing .column .btn input:last-child:hover {
+  background: none;
+  border: var(--border-style);
+  color: var(--main-color);
+  border-color: var(--main-color);
 }
 .our-pricing .column .cards {
   width: 100%;
@@ -658,4 +691,130 @@ header .row .group2 a:hover {
   border-color: var(--main-color);
   color: var(--main-color);
   background: none;
+}
+/* ----------------------- Footer ---------------------------- */
+footer {
+  padding: 100px 0px 30px 0px;
+  background: #fff;
+}
+footer .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 80px;
+  padding-bottom: 50px;
+  border-bottom: var(--border-style);
+}
+footer .row .left-side-footer {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+}
+footer .row .left-side-footer .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 15px;
+}
+footer .row .left-side-footer .contact .item {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+footer .row .left-side-footer .item a {
+  color: var(--title-text-color);
+  font-size: 18px;
+  transition: all 0.5s;
+}
+footer .row .left-side-footer .item a:hover {
+  color: var(--main-color);
+}
+
+footer .row .left-side-footer .item path {
+  transition: all 0.5s;
+}
+footer .row .left-side-footer .item:hover path {
+  fill: var(--main-color);
+}
+footer .row .right-sdie-footer {
+  width: calc(70% - 80px);
+  display: flex;
+  justify-content: right;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+footer .row .right-sdie-footer .item {
+  width: calc((70% -50px) / 3);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+}
+footer .row .right-sdie-footer .item h3 {
+  color: var(--title-text-color);
+  font-size: 20px;
+  font-weight: 600;
+}
+footer .row .right-sdie-footer .item ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+footer .row .right-sdie-footer .item ul li a {
+  color: var(--paragraph-text-secondary-color);
+  font-size: 18px;
+  transition: all 0.5s;
+}
+footer .row .right-sdie-footer .item ul li a:hover{
+  border-color: var(--main-color);
+  color: var(--main-color);
+}
+footer .row .right-sdie-footer .item:last-child ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  gap: 14px;
+}
+footer .row .right-sdie-footer .item:last-child ul li a{
+padding: 14px;
+background: var(--main-background-color);
+display: flex;
+align-items: center;
+justify-content: center;
+border: var(--border-style);
+border-radius: 8px;
+transition: all 0.5s;
+}
+footer .row .right-sdie-footer .item:last-child path{
+  transition: all 0.5s;
+}
+footer .row .right-sdie-footer .item:last-child a:hover path{
+  fill: var(--main-color);
+}
+footer .row .right-sdie-footer .item:last-child a:hover{
+border-color: var(--main-color);
+}
+footer .Skillbridge{
+  width: 100%;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .Skillbridge p{
+color: var(--paragraph-text-secondary-color);
+font-size: 18px;
 }
