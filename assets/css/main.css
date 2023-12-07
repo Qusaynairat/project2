@@ -2516,7 +2516,7 @@ footer .Skillbridge p {
   font-size: 18px;
 }
 /* Extra small devices (portrait phones, less than 576px) */
-@media screen and (max-width: 575.98px) {
+@media screen and (max-width: 559.98px) {
   footer {
     padding: 50px 20px 24px 20px;
     background: #fff;
@@ -2621,9 +2621,9 @@ footer .Skillbridge p {
   }
 }
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) {
+@media (min-width: 560px) and (max-width: 767.98px) {
   footer {
-    padding: 50px 20px 24px 20px;
+    padding: 50px 0px 24px 0px;
     background: #fff;
   }
   footer .row {
@@ -2680,11 +2680,11 @@ footer .Skillbridge p {
     gap: 12px;
   }
   footer .row .left-sdie-footer .item svg{
-    width: 25px;
-    height: 25px;
+    width: 24px;
+    height: 24px;
   }
   footer .row .right-sdie-footer .item h3 {
-    font-size: 20px;
+    font-size: 18px;
   }
   footer .row .right-sdie-footer .item ul {
     display: flex;
@@ -2694,7 +2694,7 @@ footer .Skillbridge p {
     gap: 6px;
   }
   footer .row .right-sdie-footer .item ul li a {
-    font-size: 16px;
+    font-size: 14px;
   }
   footer .row .right-sdie-footer .item:last-child ul {
     display: flex;
@@ -2705,7 +2705,7 @@ footer .Skillbridge p {
     gap: 12px;
   }
   footer .row .right-sdie-footer .item:last-child ul li a {
-    padding: 14px;
+    padding: 10px;
     border-radius: 7px;
   }
   footer .Skillbridge {
@@ -2716,7 +2716,7 @@ footer .Skillbridge p {
     align-items: center;
   }
   footer .Skillbridge p {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 /* Medium devices (tablets, 768px and up) */
