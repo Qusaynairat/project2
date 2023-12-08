@@ -427,7 +427,61 @@ header .row .group2 a:hover {
   border: 1px solid var(--main-color);
 }
 /* Extra small devices (portrait phones, less than 576px) */
-@media screen and (max-width: 529.98px) {
+@media screen and (max-width: 389.98px) {
+  header .row .subcontainer {
+    gap: 50px;
+    margin-top: 91px;
+  }
+  header .row .txt .group1 img.icon-cont {
+    width: 48px;
+    height: 48px;
+  }
+  header .row .txt .group1 {
+    gap: 10px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    padding: 14px 18px;
+  }
+  header .row .txt .group1 img.line {
+    left: -20px;
+    top: -20px;
+    width: 39px;
+    height: 43px;
+  }
+  header .row .txt .group1 h1 {
+    font-size: 16px;
+    flex-grow: 1;
+    text-align: center;
+  }
+  header .row .txt .group1 img.icon-cont {
+    margin: auto;
+  }
+  header .row .txt h2 {
+    font-size: 24px;
+    padding: 0px 35px;
+    text-align: center;
+  }
+  header .row .txt p {
+    font-size: 14px;
+    text-align: center;
+    padding: 0px 30px;
+  }
+  header .row .group2 a:nth-child(1) {
+    font-size: 14px;
+    padding: 14px 16px;
+    border-radius: 6px;
+  }
+  header .row .group2 a:nth-child(2) {
+    font-size: 14px;
+    padding: 14px 18px;
+    border-radius: 6px;
+  }
+  header .row .group2 a:hover {
+    border-radius: 6px;
+    padding: 14px 20px;
+  }
+}
+@media screen and (min-width: 390px) and (max-width: 529.98px) {
   header .row .subcontainer {
     gap: 50px;
     margin-top: 91px;
@@ -508,13 +562,13 @@ header .row .group2 a:hover {
     text-align: center;
   }
   header .row .group2 a:nth-child(1) {
-    font-size: 12px;
-    padding: 10px 18px;
+    font-size: 14px;
+    padding: 12px 18px;
     border-radius: 6px;
   }
   header .row .group2 a:nth-child(2) {
-    font-size: 12px;
-    padding: 10px 18px;
+    font-size: 14px;
+    padding: 12px 18px;
     border-radius: 6px;
   }
   header .row .group2 a:hover {
@@ -553,13 +607,13 @@ header .row .group2 a:hover {
     text-align: center;
   }
   header .row .group2 a:nth-child(1) {
-    font-size: 14px;
-    padding: 12px 18px;
+    font-size: 16px;
+    padding: 12px 20px;
     border-radius: 6px;
   }
   header .row .group2 a:nth-child(2) {
-    font-size: 14px;
-    padding: 12px 18px;
+    font-size: 16px;
+    padding: 12px 20px;
     border-radius: 6px;
   }
   header .row .group2 a:hover {
@@ -1335,7 +1389,55 @@ header .row .group2 a:hover {
   background: none;
 }
 /* Extra small devices (portrait phones, less than 576px) */
-@media screen and (max-width: 575.98px) {
+@media screen and (max-width: 369.98px) {
+  .our-courses .column {
+    gap: 40px;
+    margin-bottom: 50px;
+  }
+  .our-courses .column .cards {
+    width: 100%;
+    gap: 20px;
+  }
+  .our-courses .column .card {
+    width:100%;
+    gap: 24px;
+    padding: 24px;
+    border-radius: 10px;
+  }
+  .our-courses .column .card img {
+    border-radius: 6px;
+    width: 100%;
+  }
+  .our-courses .column .card .row .group {
+    gap: 10px;
+    margin-bottom: 14px;
+    flex-basis: 100%;
+  }
+  .our-courses .column .card .row .group span {
+    font-size: 14px;
+    padding: 8px 14px;
+    border-radius: 6px;
+  }
+  .our-courses .column .card .row span:nth-child(3) {
+    font-size: 16px;
+  }
+  .our-courses .column .card h3 {
+    font-size: 18px;
+  }
+  .our-courses .column .card p {
+    width: 100%;
+    font-size: 16px;
+    flex-grow: 1;
+  }
+  .our-courses .column .card a {
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 6px;
+    padding: 10px 0px;
+  }
+}
+@media screen and (min-width: 370px) and (max-width: 575.98px) {
   .our-courses .column {
     gap: 40px;
     margin-bottom: 50px;
@@ -1621,7 +1723,49 @@ header .row .group2 a:hover {
   background: none;
 }
 /* Extra small devices (portrait phones, less than 576px) */
-@media screen and (max-width: 575.98px) {
+@media screen and (max-width: 389.98px) {
+  .our-testimonials .column {
+    gap: 40px;
+    margin-bottom: 50px;
+  }
+  .our-testimonials .column .stories {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .our-testimonials .column .stories .story {
+    width:100%;
+    border-radius: 10px;
+  }
+  .our-testimonials .column .stories .story p {
+    padding: 30px;
+    font-size: 14px;
+  }
+  .our-testimonials .column .stories .story .user {
+    width: 100%;
+    padding: 20px 30px;
+  }
+  .our-testimonials .column .stories .story .user .name {
+    gap: 10px;
+  }
+  .our-testimonials .column .stories .story .user .name p {
+    font-size: 14px;
+  }
+  .our-testimonials .column .stories .story .user .name img {
+    border-radius: 8px;
+    width:40px;
+    height:40px;
+  }
+  .our-testimonials .column .stories .story .user a {
+    font-size: 10px;
+    border-radius: 6px;
+    padding: 12px 12px;
+  }
+}
+@media screen and (min-width: 390px) and (max-width: 575.98px) {
   .our-testimonials .column {
     gap: 40px;
     margin-bottom: 50px;
